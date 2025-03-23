@@ -1,13 +1,13 @@
 import type { Config } from "tailwindcss";
 
 const config = {
-  darkMode: ["class"],
+  // darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx,css}",
-    "./src/**/*.{ts,tsx}",
-    "./constants/**/*.{ts,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,html}",
+    "./components/**/*.{js,ts,jsx,tsx,html}",
+    "./app/**/*.{js,ts,jsx,tsx,html}",
+    "./src/**/*.{js,ts,jsx,tsx,html}",
+    "./constants/**/*.{js,ts,jsx,tsx,html}",
   ],
   prefix: "",
   theme: {
@@ -19,6 +19,12 @@ const config = {
       },
     },
     extend: {
+      borderRadius: {
+        lg: '8px', // Ensure this exists
+      },
+      fontSize: {
+        16: "16px", // Define text-16
+      },
       colors: {
         fill: {
           1: "rgba(255, 255, 255, 0.10)",
@@ -28,9 +34,7 @@ const config = {
           500: "#6172F3",
           700: "#3538CD",
         },
-        fontSize: {
-          16: "16px", // Define text-16
-        },
+       
         success: {
           25: "#F6FEF9",
           50: "#ECFDF3",
@@ -106,7 +110,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  // plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;

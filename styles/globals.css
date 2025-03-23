@@ -42,3 +42,7 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #7878a3;
 }
+.border-blue{
+  border: solid 1px blue;
+  background:red;
+}
